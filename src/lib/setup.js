@@ -48,7 +48,7 @@ export async function initGit(target) {
 			gitUser = defaultGitUser;
 		}
 
-		await spawn('git', ['commit', '-m', 'initial commit from Preact CLI'], {
+		await spawn('git', ['commit', '-m', 'Initial commit from Preact CLI'], {
 			cwd,
 			env: {
 				GIT_COMMITTER_NAME: gitUser,
